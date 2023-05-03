@@ -10,9 +10,10 @@
 </head>
 <body>
 <% List<User> u = (List<User>)request.getAttribute("list"); %>
-
-
-<table border="1">
+<br><br>
+<h1 align ="center">User List</h1>
+<br><br><br>
+<table border="1" align="center">
 <tr>
 	<th>User ID</th>
 	<th>First Name</th>
@@ -21,10 +22,10 @@
 	<th>E-Mail</th>
 	<th>Date Of Birth</th>
 	<th>Password</th>
-	<th>State</th>
-	<th>District</th>
-	<th>Taluka</th>
-	<th>Pin Code</th>
+	<th>County</th>
+	<th>City/Town</th>
+	<th>Country</th>
+	<th>Post Code</th>
 	<th>Gender</th>
 </tr>
 

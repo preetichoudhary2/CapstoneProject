@@ -13,13 +13,13 @@
 .main{
     margin: 0;
     padding: 0;
-    background:#FAF0E6;
+    background:white;
     font-family: Sul Sans,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    color: #FFFAFA;
+    color: white;
     -webkit-font-smoothing: antialiased
-	background-color: #FFFAFA;
+	background-color: white;
 	
 }
 
@@ -102,7 +102,10 @@
 
 <body class="main">
 <div class="bx">
-
+<div class="container">
+<img class="img" alt="Snow" src="sporty.png">
+<h3 class="sh"></h3>
+</div>
 <br><br>
 <a href="user_profile.jsp">
 <img class="pro-img" src="profile_admin.png">

@@ -34,7 +34,7 @@
 }
 
 .head{
-	max-width: 280px;
+	max-width: 380px;
 	border: 2px solid #FFFAFA;
 	position: relative;
 	margin: auto;
@@ -62,7 +62,7 @@
 <h3 class="sh">SportyShoes.com</h3>
 <hr>
 <br>
-<h1 class="head">Registration <a class="reg">ADMIN</a></h1><br>
+<h1 class="head"> <a class="reg">ADMIN </a>Registration</h1><br>
 <body class="main">
 <div class="box">
 
@@ -86,19 +86,19 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<b>Password :</b>&nbsp;
 <input type="password" name="ad_pass" placeholder="Password"><br><br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conform :</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conform Password:</b>
 <input type="password" name="ad_con" placeholder="Conform Password">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b>State :</b>&nbsp;
+<b>County :</b>&nbsp;
 <input type="text" name="ad_state" placeholder="State"><br><br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>District :</b>
-<input type="text" name="ad_dist" placeholder="District">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>City/Town :</b>
+<input type="text" name="ad_dist" placeholder="City/Town">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b>Taluka :</b>
-<input type="text" name="ad_taluka" placeholder="Taluka"><br><br><br>
+<b>Country :</b>
+<input type="text" name="ad_taluka" placeholder="Country"><br><br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Pin Code :</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Post Code :</b>
 <input type="number" name="ad_pin" placeholder="Pin Code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <b>Gender :</b>

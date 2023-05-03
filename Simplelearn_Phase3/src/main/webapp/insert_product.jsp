@@ -34,7 +34,7 @@
 }
 
 .head{
-	max-width: 300px;
+	max-width: 380px;
 	border: 2px solid #FFFAFA;
 	position: relative;
 	margin: auto;

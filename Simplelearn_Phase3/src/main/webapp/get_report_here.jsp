@@ -25,7 +25,7 @@
   <tbody>
   <c:forEach items="${r_list }" var="r">
     <tr>
-      <th scope="row" >PRAJ${r.pro_id }SH</th>
+      <th scope="row" >PREE${r.pro_id }SH</th>
       <td class="font-weight-bold">${r.pro_code }</td>
       <td>${r.pro_name }</td>
       <td>${r.pro_brand }</td>

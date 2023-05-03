@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert User BHALE</title>
+<title>Insert User </title>
 <style type="text/css">
 .box {
 	max-width: 750px; 
@@ -93,20 +93,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<b>Password :</b>&nbsp;
 <input type="password" name="user_pass" placeholder="User Password"><br><br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conform :</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conform Password :</b>
 <input type="password" name="user_conpass" placeholder="Conform Password">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b>State :</b>&nbsp;
-<input type="text" name="user_state" placeholder="State"><br><br><br>
+<b>County :</b>&nbsp;
+<input type="text" name="user_state" placeholder="County"><br><br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>District :</b>
-<input type="text" name="user_dist" placeholder="District">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>City/Town :</b>
+<input type="text" name="user_dist" placeholder="City/Town">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<b>Taluka :</b>
-<input type="text" name="user_taluka" placeholder="Taluka"><br><br><br>
+<b>Country :</b>
+<input type="text" name="user_taluka" placeholder="Country"><br><br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Pin Code :</b>
-<input type="number" name="user_pin" placeholder="Pin Code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Post Code :</b>
+<input type="number" name="user_pin" placeholder="Post Code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <b>Gender :</b>
 <input type="text" name="user_gender" placeholder="Gender"><br><br><br>
