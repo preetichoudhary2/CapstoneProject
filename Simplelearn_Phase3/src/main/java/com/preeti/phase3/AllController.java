@@ -45,6 +45,8 @@ public class AllController {
 	@Autowired
 	CartDao c_dao;
 	
+	
+	
 	/*USER OPERETION'S START FROM HERE*/
 	
 	@RequestMapping("/")
@@ -273,12 +275,18 @@ public class AllController {
 	
 	@ResponseBody
 	@RequestMapping("/addcart/{pro_code}")
-	public RedirectView addCart(@PathVariable("pro_code") String pro_code, HttpServletRequest req, HttpServletResponse res)
+	public ModelAndView addcart(@PathVariable String pro_code)
 	{
-		RedirectView rv = new RedirectView();
 		Cart c = new Cart();
 		c.setPro_code(pro_code);
-		return rv;
+		 return new ModelAndView("/add_cart");
+	}
+	@ResponseBody
+	@RequestMapping("/buyprod/{pro_code}")
+	public ModelAndView buyprod(@PathVariable String pro_code)
+	{
+		
+		 return new ModelAndView("/buy_prod");
 	}
 		
 	/*--> PRODUCT OPERATIONS END HERE <--*/

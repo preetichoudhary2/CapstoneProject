@@ -34,9 +34,9 @@
       <td>${p.pro_about }</td>
       <td class="font-weight-bold">&#x20B9; ${p.pro_price }/-</td>
       <td>
-      		<a href="/addcart/${p.pro_code}/ " class="outline-danger"><i class="fas fa-cart-plus"></i></a>
-			&nbsp;&nbsp;&nbsp;
-			<a href="" class="btn btn-outline-danger">Buy</a>
+        <a href="/addcart/{pro_code}(pro_code=${p.pro_code})"><i class="fas fa-cart-plus"></i></a>
+      		&nbsp;&nbsp;&nbsp;
+			<a href="/buyprod/{pro_code}(pro_code=${p.pro_code})" class="btn btn-outline-danger">Buy</a>
       </td>
     </tr>
   </c:forEach>

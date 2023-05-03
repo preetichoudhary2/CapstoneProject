@@ -111,8 +111,8 @@
 <img class="pro-img" src="profile_admin.png">
 </a>
 <a class="active" href="index.jsp"><b>LOG OUT</b></a>
-<a class="active" href="#"><b>MY CART</b></a>
-<a class="active" href="#"><b>MY ORDER'S</b></a>
+<a class="active" href="cart.jsp"><b>MY CART</b></a>
+<a class="active" href="cart.jsp"><b>MY ORDER'S</b></a>
 <a class="active" href="/aviliablePro"><b>PRODUCT'S</b></a>
 <a class="active" href="/after_user_login.jsp"><b>HOME</b></a>
 </div>
