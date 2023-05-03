@@ -103,7 +103,7 @@
 <a href="">
 <img class="pro-img" src="profile_admin.png">
 </a>
-<a class="active" href="HOME_SCREEN.jsp"><b>LOG OUT</b></a>
+<a class="active" href="index.jsp"><b>LOG OUT</b></a>
 <a class="active" href="ad_get_report.jsp"><b>REPORT</b></a>
 <a class="active" href="ad_search_users.jsp"><b>SEARCH USER</b></a>
 <a class="active" href="/user_get"><b>USER LIST</b></a>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PRAJVAL BHALE</title>
+<title>Forget Password</title>
 <style type="text/css">
 .box {
 	max-width: 300px; 

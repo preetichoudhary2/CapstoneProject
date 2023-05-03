@@ -4,25 +4,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PRAJVAL BHALE</title>
+<title>User Main</title>
 <style type="text/css">
 
 .main{
     margin: 0;
     padding: 0;
-    background:#FAF0E6;
+    background:white;
     font-family: Sul Sans,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    color: #FFFAFA;
+    color: White;
     -webkit-font-smoothing: antialiased
-	background-color: #FFFAFA;
+	background-color: white;
 	
 }
 
 .bx {
 	padding: 0;
-  	background-color: black;
+  	background-color: white;
   	overflow: hidden;
   	border-radius: 0;
   	height:150px;
@@ -36,7 +36,7 @@
 .head{
 	font-family: Garamond;
 	font-size:30px;
-	color: green;
+	color: teal;
 	padding:1px;
 	max-width:500px;
 	padding-top: 100px;
@@ -48,7 +48,7 @@
   left: 9%;
   transform: translate(-50%, -50%);
   font-family: Garamond;
-  color: green;
+  color: teal;
   font-size:27px;
 }
 
@@ -60,9 +60,9 @@
 	margin: auto;
 	margin-right : 1%;
 	margin-left : 1%;
-	font-size: 27px;
+	font-size: 22px;
 	font-family: Garamond;
-	color: green;
+	color: Teal;
 }
 
 
@@ -77,13 +77,6 @@
 	max-height: 200px;
 	max-width: 400px;
 }
-
-.info{
-	color: black;
-	font-family: Garamond;
-	float: right;
-	padding-right: 15px;
-}
 </style>
 </head>
 
@@ -97,7 +90,7 @@
 </div>
 <br><br>
 
-<a class="active" href="HOME_SCREEN.jsp"><b>LOG-OUT</b></a>
+<a class="active" href="index.jsp"><b>LOG-OUT</b></a>
 <a class="active" href="user_login.jsp"><b>LOGIN</b></a>
 <a class="active" href="insert_user.jsp"><b>REGISTER</b></a>
 <a class="active" href="User_main.jsp"><b>HOME</b></a>

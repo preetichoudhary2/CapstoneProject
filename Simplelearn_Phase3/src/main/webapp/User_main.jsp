@@ -90,7 +90,7 @@
 </div>
 <br><br>
 
-<a class="active" href="HOME_SCREEN.jsp"><b>LOG-OUT</b></a>
+<a class="active" href="index.jsp"><b>LOG-OUT</b></a>
 <a class="active" href="user_login.jsp"><b>LOGIN</b></a>
 <a class="active" href="insert_user.jsp"><b>REGISTER</b></a>
 <a class="active" href="User_main.jsp"><b>HOME</b></a>

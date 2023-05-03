@@ -25,7 +25,7 @@
 
 .bx {
 	padding: 0;
-  	background-color: black;
+  	background-color: white;
   	overflow: hidden;
   	border-radius: 0;
   	height:150px;
@@ -93,7 +93,7 @@
 }
 
 .table{
-	color: black;
+	color: white;
 	font-size: 130%;
 	font-family: times new roman;
 }
@@ -102,14 +102,12 @@
 
 <body class="main">
 <div class="bx">
-<div class="container">
-<img class="img" alt="Snow" src="sporty.png">
-</div>
+
 <br><br>
 <a href="user_profile.jsp">
 <img class="pro-img" src="profile_admin.png">
 </a>
-<a class="active" href="HOME_SCREEN.jsp"><b>LOG OUT</b></a>
+<a class="active" href="index.jsp"><b>LOG OUT</b></a>
 <a class="active" href="#"><b>MY CART</b></a>
 <a class="active" href="#"><b>MY ORDER'S</b></a>
 <a class="active" href="/aviliablePro"><b>PRODUCT'S</b></a>

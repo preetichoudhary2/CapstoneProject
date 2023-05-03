@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PRAJVAL BHALE</title>
+<title>Admin</title>
 <style type="text/css">
 .box {
 	max-width: 750px; 
@@ -62,7 +62,7 @@
 <h3 class="sh">SportyShoes.com</h3>
 <hr>
 <br>
-<h1 class="head">Apply for <a class="reg">ADMIN.></a></h1><br>
+<h1 class="head">Registration <a class="reg">ADMIN</a></h1><br>
 <body class="main">
 <div class="box">
 

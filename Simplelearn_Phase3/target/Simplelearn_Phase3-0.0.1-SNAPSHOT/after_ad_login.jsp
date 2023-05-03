@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PRAJVAL BHALE</title>
+<title>After Login</title>
 <style type="text/css">
 
 .main{
@@ -22,7 +22,7 @@
 
 .bx {
 	padding: 0;
-  	background-color: black;
+  	background-color: white;
   	overflow: hidden;
   	border-radius: 0;
   	height:150px;
@@ -103,7 +103,7 @@
 <a href="">
 <img class="pro-img" src="profile_admin.png">
 </a>
-<a class="active" href="HOME_SCREEN.jsp"><b>LOG OUT</b></a>
+<a class="active" href="index.jsp"><b>LOG OUT</b></a>
 <a class="active" href="ad_get_report.jsp"><b>REPORT</b></a>
 <a class="active" href="ad_search_users.jsp"><b>SEARCH USER</b></a>
 <a class="active" href="/user_get"><b>USER LIST</b></a>

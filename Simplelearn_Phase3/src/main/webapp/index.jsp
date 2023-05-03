@@ -89,10 +89,10 @@
 <h3 class="sh"></h3>
 </div>
 <br><br>
-<a class="active" href="HOME_CART.jsp"><b>CART</b></a>
+<a class="active" href="cart.jsp"><b>CART</b></a>
 <a class="active" href="User_main.jsp"><b>USER</b></a>
 <a class="active" href="Admin_main.jsp"><b>ADMIN</b></a>
-<a class="active" href="HOME_SCREEN.jsp"><b>HOME</b></a>
+<a class="active" href="index.jsp"><b>HOME</b></a>
 
 </div>
 </body>

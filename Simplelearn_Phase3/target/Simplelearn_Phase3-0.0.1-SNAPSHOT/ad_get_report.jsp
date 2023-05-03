@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PRAJVAL BHALE</title>
+<title>Reports</title>
 </head>
 <h1>collect report from here</h1>
 <body>

@@ -4,76 +4,81 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PRAJVAL BHALE</title>
+<title>Login</title>
 <style type="text/css">
-.box {
-	max-width: 750px; 
-  	margin: auto;
-	align-content: center;
-	border : 1px solid gray;
-  	border-radius: 15px;
-  	background-color: white;
-  	border-width: 2px;
-  	overflow: hidden; 	 
-  
-  	padding : 60px;
-  	padding-top: 35px;
-  	padding-bottom : 35px;
-}
 
 .main{
-	background-color: #FFFAFA;
+    margin: 0;
+    padding: 0;
+    background:white;
+    font-family: Sul Sans,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: White;
+    -webkit-font-smoothing: antialiased
+	background-color: white;
+	
 }
 
-.btn{
-	cursor: pointer;
-	padding:5px;
-	width: 70px;
-	height: 30px;
-}
-
-.db{
-	cursor: pointer;
+.bx {
+	padding: 0;
+  	background-color: white;
+  	overflow: hidden;
+  	border-radius: 0;
+  	height:150px;
+  	max-height: 210px;
+ 	margin: auto;
+  	padding-top: 20px;
+  	border-bottom-left-radius: 20px;
+  	border-bottom-right-radius: 20px;
 }
 
 .head{
-	max-width: 300px;
-	border: 2px solid #FFFAFA;
-	position: relative;
-	margin: auto;
-	padding:2px;
-	padding-right: 2px;
-	font-size: 47px;
-}
-
-.sh{
 	font-family: Garamond;
-	font-size:20px;
-	color: green;
+	font-size:30px;
+	color: teal;
 	padding:1px;
-	padding-top:1px;
 	max-width:500px;
-	margin: 1%;
+	padding-top: 100px;
 }
 
-.err{
-	color: red;
+.sh {
+  position: absolute;
+  top: 21%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  font-family: Garamond;
+  color: teal;
+  font-size:27px;
 }
 
-.log{
-	color: blue;
-}
-
-.admin{
+.active{
+	display :block;
 	text-decoration: none;
-	color: blue;
+	float: right;
+	padding: 1%;
+	margin: auto;
+	margin-right : 1%;
+	margin-left : 1%;
+	font-size: 22px;
+	font-family: Garamond;
+	color: Teal;
 }
 
-.forget_pass{
-	color: blue;
-	text-decoration: none;
+
+.active a:hover {
+	background: gray;
+}
+
+.img{
+	position: absolute;
+	margin-left: 2%;	
+	margin-right: 2%;
+	max-height: 200px;
+	max-width: 400px;
 }
 </style>
+</head>
 </head>
 <h3 class="sh">SportyShoes.com</h3>
 <hr>

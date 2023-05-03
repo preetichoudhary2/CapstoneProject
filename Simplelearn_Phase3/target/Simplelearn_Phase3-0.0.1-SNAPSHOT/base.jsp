@@ -28,5 +28,5 @@
 		crossorigin="anonymous">
 </script>
 
-	<title><c:out value="${title }"></c:out>PRAJVAL BHALE</title>
+	<title><c:out value="${title }"></c:out>Sporty Shoes</title>
 

@@ -50,9 +50,9 @@ public class AllController {
 	@RequestMapping("/")
 	public ModelAndView WelcomeHome()
 	{
-		return new ModelAndView("HOME_SCREEN");
+		return new ModelAndView("index");
 	}
-	
+
 	//USER CAN REGISTER USING THIS CODE
 	@ResponseBody
 	@RequestMapping("/user_insert")
@@ -107,7 +107,7 @@ public class AllController {
 		{
 			return new ModelAndView("after_user_login");
 		}else {
-			return new ModelAndView("HOME_SCREEN");
+			return new ModelAndView("index");
 		}		
 	}
 	
@@ -193,7 +193,7 @@ public class AllController {
 			return new ModelAndView("after_ad_login");
 		}else 
 		{
-			return new ModelAndView("HOME_SCREEN");
+			return new ModelAndView("index");
 		}
 	}	
 
