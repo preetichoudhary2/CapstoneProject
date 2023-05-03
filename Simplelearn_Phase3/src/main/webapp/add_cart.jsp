@@ -8,5 +8,7 @@
 </head>
 <body>
 <h1>Product added in cart </h1>
+<h3><a href="/aviliableCart">Checkout</a></h3>
+<h3><a href="/aviliablePro">Continue Shopping</a></h3> 
 </body>
 </html>

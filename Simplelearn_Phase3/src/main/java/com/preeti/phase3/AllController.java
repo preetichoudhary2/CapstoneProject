@@ -149,6 +149,16 @@ public class AllController {
 		mv.addObject("avil_pro",avil_pro);
 		return mv;
 	}
+	@ResponseBody
+	@RequestMapping("/aviliableCart")
+	public ModelAndView aviliablecart(HttpServletRequest req, HttpServletResponse res)
+	{
+		ModelAndView mv = new ModelAndView();
+		List<Cart> avil_cart = c_dao.aviliableCart();
+		mv.setViewName("avil_cartItem");
+		mv.addObject("avil_cart",avil_cart);
+		return mv;
+	}
 	/*USER OPERETION'S END HERE*/
 
 	
@@ -277,9 +287,16 @@ public class AllController {
 	@RequestMapping("/addcart/{pro_code}")
 	public ModelAndView addcart(@PathVariable String pro_code)
 	{
+		ModelAndView mv=new ModelAndView();
 		Cart c = new Cart();
 		c.setPro_code(pro_code);
-		 return new ModelAndView("/add_cart");
+		Cart cc=c_dao.addcart(c);
+		if(cc!=null)
+		{
+			mv.setViewName("/add_cart");
+		}
+		return mv;
+		 
 	}
 	@ResponseBody
 	@RequestMapping("/buyprod/{pro_code}")

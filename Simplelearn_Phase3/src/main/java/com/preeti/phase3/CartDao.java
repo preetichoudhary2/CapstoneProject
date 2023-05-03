@@ -17,7 +17,7 @@ public class CartDao {
 		return c_repo.save(c);
 	}
 	
-	public List<Cart> aviliablePro()
+	public List<Cart> aviliableCart()
 	{
 		return c_repo.findAll();
 	}
