@@ -32,6 +32,9 @@ public class AllController {
 	@Autowired
 	CartRepo c_repo;
 	
+	@Autowired
+	BuyRepo b_repo;
+	
 	/*HERE WE CREATE DAO OBJECT'S*/
 	@Autowired
 	AdminDao a_dao;
@@ -157,6 +160,16 @@ public class AllController {
 		List<Cart> avil_cart = c_dao.aviliableCart();
 		mv.setViewName("avil_cartItem");
 		mv.addObject("avil_cart",avil_cart);
+		return mv;
+	}
+	@ResponseBody
+	@RequestMapping("/aviliableOrd")
+	public ModelAndView aviliableOrd(HttpServletRequest req, HttpServletResponse res)
+	{
+		ModelAndView mv = new ModelAndView();
+		List<Product> avil_pro = pro_dao.aviliablePro();
+		mv.setViewName("avil_product");
+		mv.addObject("avil_pro",avil_pro);
 		return mv;
 	}
 	/*USER OPERETION'S END HERE*/
