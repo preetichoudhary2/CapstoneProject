@@ -8,9 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -30,6 +32,9 @@ public class AllController {
 	@Autowired
 	CartRepo c_repo;
 	
+	@Autowired
+	BuyRepo b_repo;
+	
 	/*HERE WE CREATE DAO OBJECT'S*/
 	@Autowired
 	AdminDao a_dao;
@@ -43,8 +48,16 @@ public class AllController {
 	@Autowired
 	CartDao c_dao;
 	
+	
+	
 	/*USER OPERETION'S START FROM HERE*/
 	
+	@RequestMapping("/")
+	public ModelAndView WelcomeHome()
+	{
+		return new ModelAndView("index");
+	}
+
 	//USER CAN REGISTER USING THIS CODE
 	@ResponseBody
 	@RequestMapping("/user_insert")
@@ -85,19 +98,21 @@ public class AllController {
 		return mv;
 	}
 	
+	
+	
 	//USER LOGIN USING THIS CODE
 	@ResponseBody
 	@RequestMapping("/user_login")
-	public String user_login(HttpServletRequest req, HttpServletResponse res)
+	public ModelAndView user_login(HttpServletRequest req, HttpServletResponse res)
 	{
 		String user_fname = req.getParameter("user_fname");
 		String user_conpass = req.getParameter("user_conpass");
 		
 		if(u_repo.findbyname(user_fname)!=null)
 		{
-			return "Welcome Back"+" "+ user_fname;
+			return new ModelAndView("after_user_login");
 		}else {
-			return "Check Credentisl's or Register" + " ";
+			return new ModelAndView("index");
 		}		
 	}
 	
@@ -130,6 +145,26 @@ public class AllController {
 	@ResponseBody
 	@RequestMapping("/aviliablePro")
 	public ModelAndView aviliablePro(HttpServletRequest req, HttpServletResponse res)
+	{
+		ModelAndView mv = new ModelAndView();
+		List<Product> avil_pro = pro_dao.aviliablePro();
+		mv.setViewName("avil_product");
+		mv.addObject("avil_pro",avil_pro);
+		return mv;
+	}
+	@ResponseBody
+	@RequestMapping("/aviliableCart")
+	public ModelAndView aviliablecart(HttpServletRequest req, HttpServletResponse res)
+	{
+		ModelAndView mv = new ModelAndView();
+		List<Cart> avil_cart = c_dao.aviliableCart();
+		mv.setViewName("avil_cartItem");
+		mv.addObject("avil_cart",avil_cart);
+		return mv;
+	}
+	@ResponseBody
+	@RequestMapping("/aviliableOrd")
+	public ModelAndView aviliableOrd(HttpServletRequest req, HttpServletResponse res)
 	{
 		ModelAndView mv = new ModelAndView();
 		List<Product> avil_pro = pro_dao.aviliablePro();
@@ -172,17 +207,18 @@ public class AllController {
 	//ADMIN LOGIN USING USER NAME
 	@ResponseBody
 	@RequestMapping("/ad_login")
-	public String ad_login(HttpServletRequest req, HttpServletResponse res)
+	public ModelAndView ad_login(HttpServletRequest req, HttpServletResponse res)
 	{
+		ModelAndView mv = new ModelAndView();
 		String ad_fname = req.getParameter("ad_fname");
 		String ad_con = req.getParameter("ad_con");
 
 		if(a_repo.findbyname(ad_fname)!=null)			
 		{
-			return "Welcome Back "+ " "+ ad_fname;
+			return new ModelAndView("after_ad_login");
 		}else 
 		{
-			return "Check Credencial's" + " ";
+			return new ModelAndView("index");
 		}
 	}	
 
@@ -206,18 +242,14 @@ public class AllController {
 	
 	//ADMIN CAN GET REPORT USING THIS CODE
 	@ResponseBody
-	@RequestMapping("/get_report")
-	public ModelAndView report(HttpServletRequest req, HttpServletResponse res)
+	@RequestMapping("/my_order")
+	public ModelAndView my_order(HttpServletRequest req, HttpServletResponse res)
 	{
 		ModelAndView mv = new ModelAndView();		
-		String sell_date = req.getParameter("sell_date");
-		List<Product> r_list = pro_repo.findByDate(sell_date);
-		mv.setViewName("get_report_here");
-		mv.addObject("r_list",r_list);
-		if(pro_dao==null)
-		{
-			mv.setViewName("report_error");
-		}
+		List<Product> o_list = pro_repo.findAll();
+		mv.setViewName("my_order_here");
+		mv.addObject("o_list",o_list);
+		
 		return mv;
 	}	
 	
@@ -259,15 +291,45 @@ public class AllController {
 		}
 		return mv;
 	}
+	@ResponseBody
+	@RequestMapping("/get_report")
+	public ModelAndView report(HttpServletRequest req, HttpServletResponse res)
+	{
+		ModelAndView mv = new ModelAndView();		
+		String sell_date = req.getParameter("sell_date");
+		List<Product> r_list = pro_repo.findByDate(sell_date);
+		mv.setViewName("get_report_here");
+		mv.addObject("r_list",r_list);
+		if(pro_dao==null)
+		{
+			mv.setViewName("report_error");
+		}
+		return mv;
+	}	
+	
+	
 	
 	@ResponseBody
 	@RequestMapping("/addcart/{pro_code}")
-	public RedirectView addCart(@PathVariable("pro_code") String pro_code, HttpServletRequest req, HttpServletResponse res)
+	public ModelAndView addcart(@PathVariable String pro_code)
 	{
-		RedirectView rv = new RedirectView();
+		ModelAndView mv=new ModelAndView();
 		Cart c = new Cart();
 		c.setPro_code(pro_code);
-		return rv;
+		Cart cc=c_dao.addcart(c);
+		if(cc!=null)
+		{
+			mv.setViewName("/add_cart");
+		}
+		return mv;
+		 
+	}
+	@ResponseBody
+	@RequestMapping("/buyprod/{pro_code}")
+	public ModelAndView buyprod(@PathVariable String pro_code)
+	{
+		
+		 return new ModelAndView("/buy_prod");
 	}
 		
 	/*--> PRODUCT OPERATIONS END HERE <--*/

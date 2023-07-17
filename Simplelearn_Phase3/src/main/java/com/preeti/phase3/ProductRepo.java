@@ -11,4 +11,7 @@ public interface ProductRepo extends JpaRepository<Product, Integer>{
 
 	@Query("select pr from Product pr where pr.sell_date=?1")
 	public List<Product> findByDate(String sell_date);
+	
+	@Query("select pr from Product pr join Buy b where pr.pro_id=b.id")
+	public List<Product> findAll();
 }

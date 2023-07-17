@@ -1,18 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@ page import="java.util.*" %>
-    <%@ page import="com.prajval.phase3.*" %>
+    <%@ page import="com.preeti.phase3.*" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PRAJVAL BHALE</title>
+<title>Serach User</title>
 </head>
 <body>
 <% List<User> u = (List<User>)request.getAttribute("u_list"); %>
 
-
-<table border="1">
+<br><br>
+<h1 align ="center">User List</h1>
+<br><br><br>
+<table border="1" align="center">
 <tr>
 	<th>User ID</th>
 	<th>First Name</th>

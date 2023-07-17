@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PRAJVAL BHALE</title>
+<title>Search User</title>
 <style type="text/css">
 .box {
 	max-width: 450px; 
@@ -69,7 +69,7 @@
 <h3 class="sh">SportyShoes.com</h3>
 <hr>
 <br>
-<h1 class="head"><a class="search">Search</a> Sign Up User's Here</h1><br><br><br>
+<h1 class="head"><a class="search">Search</a> User by Name</h1><br><br><br>
 <body class="main">
 <div class="box">
 

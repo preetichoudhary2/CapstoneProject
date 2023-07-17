@@ -1,5 +1,7 @@
 package com.preeti.phase3;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,4 +16,11 @@ public class CartDao {
 	{
 		return c_repo.save(c);
 	}
+	
+	public List<Cart> aviliableCart()
+	{
+		return c_repo.findAll();
+	}
+	
+	
 }

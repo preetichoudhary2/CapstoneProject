@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PRAJVAL BHALE</title>
+<title>User Login</title>
 <style type="text/css">
 .box {
 	max-width: 750px; 
@@ -49,7 +49,7 @@
 .sh{
 	font-family: Garamond;
 	font-size:20px;
-	color: green;
+	color: red;
 	padding:1px;
 	padding-top:1px;
 	max-width:500px;

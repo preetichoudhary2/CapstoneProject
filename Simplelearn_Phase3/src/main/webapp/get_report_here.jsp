@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@page import="com.prajval.phase3.Product"%>
+<%@page import="com.preeti.phase3.Product"%>
 <%@page import="java.util.List"%>
 <%@include file="./base.jsp" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <meta charset="ISO-8859-1">
-<title>PRAJVAL BHALE</title>
+<title>Reports </title>
 </head>
 <body>
 <table class="table table-striped">
@@ -25,7 +25,7 @@
   <tbody>
   <c:forEach items="${r_list }" var="r">
     <tr>
-      <th scope="row" >PRAJ${r.pro_id }SH</th>
+      <th scope="row" >PREE${r.pro_id }SH</th>
       <td class="font-weight-bold">${r.pro_code }</td>
       <td>${r.pro_name }</td>
       <td>${r.pro_brand }</td>

@@ -3,7 +3,7 @@
 <html>
 <head>
  <%@ page import="java.util.*" %>
-    <%@ page import="com.prajval.phase3.*" %>
+    <%@ page import="com.preeti.phase3.*" %>
    
 <%@include file="./base.jsp" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -13,19 +13,19 @@
 .main{
     margin: 0;
     padding: 0;
-    background:#FAF0E6;
+    background:white;
     font-family: Sul Sans,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    color: #FFFAFA;
+    color: white;
     -webkit-font-smoothing: antialiased
-	background-color: #FFFAFA;
+	background-color: white;
 	
 }
 
 .bx {
 	padding: 0;
-  	background-color: black;
+  	background-color: white;
   	overflow: hidden;
   	border-radius: 0;
   	height:150px;
@@ -93,7 +93,7 @@
 }
 
 .table{
-	color: black;
+	color: white;
 	font-size: 130%;
 	font-family: times new roman;
 }
@@ -104,15 +104,16 @@
 <div class="bx">
 <div class="container">
 <img class="img" alt="Snow" src="sporty.png">
+<h3 class="sh"></h3>
 </div>
 <br><br>
 <a href="user_profile.jsp">
 <img class="pro-img" src="profile_admin.png">
 </a>
-<a class="active" href="HOME_SCREEN.jsp"><b>LOG OUT</b></a>
-<a class="active" href="#"><b>MY CART</b></a>
-<a class="active" href="#"><b>MY ORDER'S</b></a>
-<a class="active" href="/aviliablePro"><b>PRODUCT'S</b></a>
+<a class="active" href="index.jsp"><b>LOG OUT</b></a>
+<a class="active" href="/aviliableCart"><b>MY CART</b></a>
+<a class="active" href="/my_order"><b>MY ORDER</b></a>
+<a class="active" href="/aviliablePro"><b>PRODUCT</b></a>
 <a class="active" href="/after_user_login.jsp"><b>HOME</b></a>
 </div>
 
