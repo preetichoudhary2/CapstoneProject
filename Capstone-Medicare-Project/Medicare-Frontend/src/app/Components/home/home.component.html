@@ -1,0 +1,129 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-6 mx-auto" style="font-size: 30px;">
+            <h3><b> What are you looking for?</b></h3><br>
+            <div class="input-group mb-3" style="font-size: 30px;">
+                  <div class="input-group-prepend" style="font-size: 30px;">
+                    <span class="input-group-text"><img src="assets/Images/search-icon.png" alt=""></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search medicine, health products and more..."
+                    [(ngModel)]="name" (keydown.enter)="onSearch(name)" style="font-size: 30px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <img src="assets/Images/pic2.jpg" alt="pic1.jpg">
+              <br>
+
+        </div>
+    </div>
+</div>
+<br> 
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h3 class="ml-4 pl-5"><b>Browse medicines & health products</b></h3>
+            <br>
+            <h4 class="ml-4 pl-5">By health concerns</h4>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col mb-5">
+            <div id="product" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck col-11 mx-auto">
+
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/ai.png" alt="ai.png"
+                                style="width:100%; height:70%;">
+
+                                <div class="card-body text-center mt-1" style="font-size: 30px;">
+                                    <a routerLink="/show/product/class/{{medicine[4]}}">Anti Infectives</a>
+                                </div>
+                            </div>
+
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/vitamins.png" alt="vitamins.png"
+                                    style="width:100%; height:70%;">
+
+                                <div class="card-body text-center mt-1" style="font-size: 30px;">
+                                    <a routerLink="/show/product/class/{{medicine[7]}}">Daily Health Care</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/cardiac.png" alt="cardiac.png"
+                                    style="width:100%; height:70%;">
+                                <div class="card-body text-center mt-1" style="font-size: 30px;">
+                                    <a routerLink="/show/product/class/{{medicine[0]}}">Cardiac Care</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/diabetic.png" alt="diabetic.png"
+                                style="width:100%; height:70%;">
+                                <div class="card-body text-center mt-1" style="font-size: 30px;">
+                                    <a routerLink="/show/product/class/{{medicine[1]}}">Diabetic Care</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/gastro.png" alt="gastro.png"
+                                    style="width:100%; height:70%;">
+
+                                <div class="card-body text-center mt-1" style="font-size: 30px;">
+                                    <a routerLink="/show/product/class/{{medicine[2]}}">Gastro & Liver Care</a>
+                                </div>
+                            </div>
+
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/urology.png" alt="urology.png"
+                                style="width:100%; height:70%;">
+
+                                <div class="card-body text-center mt-1" style="font-size: 30px;">
+                                    <a routerLink="/show/product/class/{{medicine[3]}}">Urology Care</a>
+                                </div>
+                            </div>
+
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/gynaecology.png" alt="gynaecology.png"
+                                    style="width:100%; height:70%;">
+
+                                <div class="card-body text-center mt-1" style="font-size: 30px;">
+                                    <a routerLink="/show/product/class/{{medicine[5]}}">Gynaecology Care</a>
+                                </div>
+                            </div>
+
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/ortho.png" alt="ortho.png"
+                                    style="width:100%; height:70%;">
+
+                                <div class="card-body text-center mt-1" style="font-size: 30px;">
+                                    <a routerLink="/show/product/class/{{medicine[6]}}">Ortho care</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    
+
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
